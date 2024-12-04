@@ -54,7 +54,7 @@ const Demo = () => (
 | rotationSlider | `boolean`  | `false`        | Enable rotation adjustment                                                       |
 | aspectSlider   | `boolean`  | `false`        | Enable aspect adjustment                                                         |
 | showReset      | `boolean`  | `false`        | Show reset button to reset zoom rotation aspect                                  |
-| resetText      | `string`   | `Reset`        | Reset button text                                                                |
+| resetText      | `string`   | `Reset 重置`        | Reset button text                                                                |
 | aspect         | `number`   | `1 / 1`        | Aspect of crop area , `width / height`                                           |
 | minZoom        | `number`   | `1`            | Minimum zoom factor                                                              |
 | maxZoom        | `number`   | `3`            | Maximum zoom factor                                                              |
@@ -62,7 +62,7 @@ const Demo = () => (
 | showGrid       | `boolean`  | `false`        | Show grid of crop area (third-lines)                                             |
 | cropperProps   | `object`   | -              | [react-easy-crop] props (\* existing props cannot be overridden)                 |
 | modalClassName | `string`   | `''`           | Modal classname                                                                  |
-| modalTitle     | `string`   | `'Edit image'` | Modal title                                                                      |
+| modalTitle     | `string`   | `'Crop 裁切'` | Modal title                                                                      |
 | modalWidth     | `number`   | `string`       | Modal width                                                                      |
 | modalOk        | `string`   |                | Ok button text                                                                   |
 | modalCancel    | `string`   |                | Cancel button text                                                               |
