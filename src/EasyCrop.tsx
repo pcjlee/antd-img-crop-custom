@@ -26,6 +26,8 @@ import type { EasyCropProps, EasyCropRef } from './types';
 
 const EasyCrop = forwardRef<EasyCropRef, EasyCropProps>((props, ref) => {
   const {
+    ratioX,
+    ratioY,
     cropperRef,
     zoomSlider,
     rotationSlider,

@@ -7,6 +7,9 @@ export type BeforeUpload = Exclude<UploadProps['beforeUpload'], undefined>;
 export type BeforeUploadReturnType = ReturnType<BeforeUpload>;
 
 export type ImgCropProps = {
+  ratioX?:number;
+  ratioY?:number;
+
   quality?: number;
   fillColor?: string;
 
@@ -79,6 +82,8 @@ export type EasyCropProps = {
 } & Required<
   Pick<
     ImgCropProps,
+    | 'ratioX'
+    | 'ratioY'
     | 'zoomSlider'
     | 'rotationSlider'
     | 'aspectSlider'

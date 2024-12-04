@@ -48,6 +48,8 @@ const Demo = () => (
 
 | Prop           | Type       | Default        | Description                                                                      |
 | -------------- | ---------- | -------------- | -------------------------------------------------------------------------------- |
+| ratioX     | `number`  | `1`         | Cropped Ratio X                                                           |
+| ratioX     | `number`  | `1`         | Cropped Ratio Y                                                           |
 | quality        | `number`   | `0.95`          | Cropped image quality, `0` to `1`                                                |
 | fillColor      | `string`   | `'white'`      | Fill color for cropped image                                                     |
 | zoomSlider     | `boolean`  | `true`         | Enable zoom adjustment                                                           |

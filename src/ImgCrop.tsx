@@ -19,6 +19,9 @@ export type { ImgCropProps } from './types';
 
 const ImgCrop = forwardRef<CropperRef, ImgCropProps>((props, cropperRef) => {
   const {
+    ratioX = 1,
+    ratioY = 1,
+
     quality = 0.95,
     fillColor = 'white',
 
@@ -326,6 +329,8 @@ const ImgCrop = forwardRef<CropperRef, ImgCropProps>((props, cropperRef) => {
           destroyOnClose
         >
           <EasyCrop
+            ratioX={ratioX}
+            ratioY={ratioY}
             ref={easyCropRef}
             cropperRef={cropperRef}
             zoomSlider={zoomSlider}
