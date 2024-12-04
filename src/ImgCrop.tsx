@@ -19,7 +19,7 @@ export type { ImgCropProps } from './types';
 
 const ImgCrop = forwardRef<CropperRef, ImgCropProps>((props, cropperRef) => {
   const {
-    quality = 0.4,
+    quality = 0.95,
     fillColor = 'white',
 
     zoomSlider = true,
@@ -243,11 +243,11 @@ const ImgCrop = forwardRef<CropperRef, ImgCropProps>((props, cropperRef) => {
             easyCropRef.current!.onReset();
 
             const canvas = getCropCanvas(event.target as ShadowRoot);
-            const { type, name, uid } = processedFile as UploadFile;
+            const { name, uid } = processedFile as UploadFile;
 
             canvas.toBlob(
               async (blob) => {
-                const newFile = new File([blob as BlobPart], name, { type });
+                const newFile = new File([blob as BlobPart], name, { type: 'image/jpeg' });
                 Object.assign(newFile, { uid });
 
                 runBeforeUpload({
@@ -263,8 +263,8 @@ const ImgCrop = forwardRef<CropperRef, ImgCropProps>((props, cropperRef) => {
                   },
                 });
               },
-              type,
-              quality,
+              'image/jpeg',
+              0.95,
             );
           };
         });

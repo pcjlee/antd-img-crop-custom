@@ -48,7 +48,7 @@ const Demo = () => (
 
 | Prop           | Type       | Default        | Description                                                                      |
 | -------------- | ---------- | -------------- | -------------------------------------------------------------------------------- |
-| quality        | `number`   | `0.4`          | Cropped image quality, `0` to `1`                                                |
+| quality        | `number`   | `0.95`          | Cropped image quality, `0` to `1`                                                |
 | fillColor      | `string`   | `'white'`      | Fill color for cropped image                                                     |
 | zoomSlider     | `boolean`  | `true`         | Enable zoom adjustment                                                           |
 | rotationSlider | `boolean`  | `false`        | Enable rotation adjustment                                                       |
