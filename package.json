@@ -24,7 +24,7 @@
   ],
   "scripts": {
     "build": "rm -rf dist && rollup -c --configPlugin @rollup/plugin-typescript",
-    "u": "pnpm update --latest && pnpm add eslint@8.57.0"
+    "u": "yarn upgrade && yarn add eslint@8.57.0"
   },
   "peerDependencies": {
     "antd": ">=4.0.0",
