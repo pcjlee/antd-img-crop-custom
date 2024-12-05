@@ -20,7 +20,9 @@
   "module": "dist/antd-img-crop.esm.js",
   "types": "dist/antd-img-crop.d.ts",
   "files": [
-    "dist"
+    "dist/antd-img-crop.cjs.js",
+    "dist/antd-img-crop.esm.js",
+    "dist/antd-img-crop.d.ts"
   ],
   "scripts": {
     "build": "rm -rf dist && rollup -c --configPlugin @rollup/plugin-typescript",
